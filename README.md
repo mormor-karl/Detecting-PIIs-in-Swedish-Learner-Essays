@@ -37,7 +37,7 @@ The token classification with Transformers is based off of [this example](https:
 3. The weights in the weighted can be altered if needed. Unfortunately, the switching between weighted and not weighted has to be done in the file.
 
 ### Re-running the experiments
-Once this preparation is done, and if you have the appropriate SweLL-pilot files, you can do the following to re-run the experiments:
+Once this preparation is done, and if you have the appropriate SweLL-pilot files in the `data` folder, you can do the following to re-run the experiments:
 1. In the main folder run `python3 reannotate_iob.py [INPUT/SWELL FOLDER] [OUTPUT FOLDER] [optional flags]`
 2. `cd ./data/`
 3. `sh preproc.sh` (optionally also `cat train.txt dev.txt test.txt | cut -d " " -f 2 | grep -v "^$"| sort | uniq > labels.txt`, needed only once if you don't have the labels file)
