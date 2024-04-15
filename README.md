@@ -3,7 +3,7 @@
 This is the repository for the [Detecting Personal Identifiable Information in Swedish Learner Essays (Szawerna et al., CALD-pseudo-WS 2024)](https://aclanthology.org/2024.caldpseudo-1.7/) paper, in which we investigate the possibility of a) using Swedish BERT for detecting PIIs in L2 learner essays and b) using a simple IOB annotation to signify the PII vs. not PII difference. Out of respect for the privacy of the data subjects and legal concerns we are unable to share the original data. One can apply for the access to the already pseudonymized SweLL data [here](https://sunet.artologik.net/gu/swell). 
 
 ### Preparations
-The token classification with Transformers is based off of [this example](https://github.com/huggingface/transformers/tree/main/examples/legacy/token-classification). Please make sure that you have this code saved. In our case we had it in a subfolder in this repository called `bert`. Once you have the code, the following steps need to be carried out in order to enable the weighted loss function option:
+The token classification with Transformers is based off of [this example](https://github.com/huggingface/transformers/tree/main/examples/legacy/token-classification). Please make sure that you have this code saved. In our case we had it in a subfolder in this repository called `bert` (which in this repository only contains our custom file for running everything). Once you have the code, the following steps need to be carried out in order to enable the weighted loss function option:
 
 1. Locate the `run_ner.py` file.
 2. Replace lines 247 to 255 (initializing a Trainer() object) with the following:
