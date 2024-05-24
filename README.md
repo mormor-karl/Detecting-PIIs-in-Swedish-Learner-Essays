@@ -45,3 +45,6 @@ Once this preparation is done, and if you have the appropriate SweLL-pilot files
 5. `sh run_iob.sh` (note: if you want to toggle between weighted or unweighted CrossEntropyLoss, you have to do it manually in `run_ner.py`; same goes for changing/adding settings in `run_iob.sh`)
 6. `cd ../`
 7. `python3 analyze_output.py [OUTPUT FOLDER] [MODEL NAME]` for each of the custom trained models.
+
+## License
+This code is released under the [CRAPL academic-strength open source license](https://matt.might.net/articles/crapl/).
